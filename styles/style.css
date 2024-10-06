@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+body {
+  font-family: var(--fonts-poppins);
+}
+:root {
+  --bg-primary: #1c1e53;
+  --bg-secondary: #f4f6fc;
+  --white: #ffffff;
+  --yellow:#FCD980;
+  --fonts-poppins: 'Poppins', sans-serif;
+  --primary-font-color: #282938;
+  --secondary-font-color: #f4f6fc;
+  --heading-font-size: 48px;
+  --heading-font-weight: 600;
+  --heading-line-height: 64px;
+  --summary-font-size: 16px;
+  --summary-font-weight: 400;
+  --summary-line-height: 28px;
+}
+
+/* Common css Style Area  */
+ul,ol,li {
+  list-style: none;
+}
+
+a,span {
+  display: inline-block;
+  text-decoration: none;
+}
+image {
+  vertical-align: middle;
+}
+a,span,h1,h2,h3,h4,h5,h6,li,img,div,section {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar style  */
+.customNavbar{
+    background-color: var(--bg-primary);
+}
+.custom__NavLink{
+    color: #BBBBCB;
+    padding: 5px 0px;
+}
+.custom__NavLink:hover{
+    color: #ffffff;
+    
+}
+.custom__NavItem{
+    margin-right: 32px;
+    
+    position: relative;
+    transition: all linear 0.4s;
+}
+.custom__NavItem:hover{
+    transform: scale(1.1);
+}
+.custom__NavItem::before{
+    height: 3px ;
+    width: 0% !important;
+    background-color:red;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all linear 0.4s;
+}
+.custom__NavItem:hover::before{
+    width: 100% !important;
+    background-color:var(--yellow);
+    
+}
+.custom__NavItem::after{
+    height: 3px ;
+    width: 100% !important;
+    background-color:var(--yellow);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all linear 0.4s;
+    opacity: 0;
+}
+.custom__NavItem:hover::after{
+    width: 0% !important;
+    background-color:red;
+    opacity: 1;
+}
+
+.customNavBtn{
+    padding: 16px 48px;
+    color: #ffffff;
+    border: 2px solid hwb(225 96% 1% / 0.2);
+    border-radius: 41px;
+    background-color: transparent;
+    font-size: var(--summary-font-size);
+    font-weight: 500;
+    line-height: var(--summary-line-height);
+    position: relative;
+    z-index: 1;
+    transition: all ease-in-out 0.5s;
+    text-transform:uppercase;
+}
+.customNavBtn:hover{
+  transform: scale(1.05);
+  color: red;
+}
+
+.customNavBtn::after{
+    width: 0%;
+    opacity: 0;
+    height: 100%;
+    background-color:#FCD980;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 41px;
+    z-index: -1;
+    transition: all linear 0.5s;
+}
+
+.customNavBtn:hover::after{
+    width: 100%;
+    opacity: 1;
+    background-color:#FCD980;   
+}
+/* navbar style  */
+
+/* Banner style  */
+#banner{
+    background:var(--bg-primary);
+    padding: 140px 0px;
+}
+
+.banner__Heading{
+    font-size: var(--heading-font-size);
+    font-weight: var(--heading-font-weight);
+    line-height: var(--heading-line-height);
+    color: var(--white);
+    margin-bottom: 24px;
+}
+.modifiedBtn{
+    padding: 12px 30px;
+    
+}
+/* Banner style  */
