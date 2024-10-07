@@ -161,6 +161,13 @@ a,span,h1,h2,h3,h4,h5,h6,li,img,div,section {
 .workWrapper{
   padding: 100px 0px !important; 
 }
+.workCard{
+ cursor: pointer;
+ transition: all linear .6s;
+}
+.workCard:hover{
+  background:#2505f229;
+}
 .workCard__Image{
   width: 50px;
   height: 50px;
@@ -283,6 +290,10 @@ a,span,h1,h2,h3,h4,h5,h6,li,img,div,section {
   margin-bottom: 100px;
   cursor: pointer;
 }
+.customImage{
+  max-width: 100vw;
+  display: block;
+}
 .customContainer{
   background: var(--bg-primary);
   padding: 0;
@@ -318,3 +329,38 @@ a,span,h1,h2,h3,h4,h5,h6,li,img,div,section {
     cursor: pointer;
   }
 /* Consultency style  */
+
+/* Footer style  */
+  .footerTop{
+    background:var(--bg-primary);
+    padding: 70px 0px;
+  }
+  .footerIcon{
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  .icon{
+    font-size: 20px;
+    transition: all linear .6s;
+    
+  }
+  .icon:hover{
+    transform: scale(1.5);
+    color: #f205af !important;
+  }
+  .navItem{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+  }
+  .nav__Link{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: black;
+  }
+ 
+/* Footer style  */
