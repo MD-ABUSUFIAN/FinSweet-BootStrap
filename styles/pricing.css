@@ -134,6 +134,69 @@ a,span,h1,h2,h3,h4,h5,h6,li,img,div,section {
 }
 /* navbar style  */
 
+/* pricing card   */
+#plan{
+  margin: 50px 0px;
+}
+  .pricingCard{
+    background-color: #F4F6FC;
+    border-radius: 15px !important;
+    transition: all linear .7s;
+    max-width: 406px;
+  }
+  .pricingCardBody{
+    background-color: #FFFFFF0F !important;
+    border-bottom-left-radius: 100% ;
+    border-bottom-right-radius: 100% ;
+  }
+  .pricingCard:hover{
+    background-color: #1C1E53;
+    color: #ffffff !important;
+    cursor: pointer;
+  }
+  .pricingCard:hover .getStartBtn{
+    background-color: #FCD980;
+    color: black !important;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .pricingCard:hover .listItems__Link{
+    color: white !important;
+  }
+  .pricingCard:hover .cardIcon{
+    color: #97DAAD!important;
+  }
+  .pricingCard:hover .CustomTitle{
+    color: #FCD980!important;
+  }
+    .listItems{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .getStartBtn:hover{
+    transform: scale(1.07);
+  }
+  .getStartBtn{
+    background-color: black;
+    color: white;
+    transition: all linear .6s;
+  }
+  .listItems__Link{
+    color: #282938;
+    transition: all linear .6s;
+  }
+  .customList{
+    transition: all linear .6s;
+  }
+  .customList:hover .cardIcon{
+    color: gray !important;
+  }
+  .customList:hover .listItems__Link{
+    color: gray !important;
+  }
+/* pricing card   */
+
 /* Faq style  */
     #faq{
       background-color: #ffffff;
