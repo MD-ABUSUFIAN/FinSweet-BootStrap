@@ -135,27 +135,28 @@ a,span,h1,h2,h3,h4,h5,h6,li,img,div,section {
 /* navbar style  */
 
 /* Banner style  */
-#banner{
-    background:var(--bg-primary);
-    padding: 80px 0px;
-}
 
-.banner__Heading{
-    font-size: var(--heading-font-size);
-    font-weight: var(--heading-font-weight);
-    line-height: var(--heading-line-height);
-    color: var(--white);
-    margin-bottom: 24px;
-}
 .modifiedBtn{
     padding: 12px 30px;
-    
 }
 /* Banner style  */
 
+/* GOAL style  */
+ .goalWrapper{
+  background: #F4F5F5;
+ }
+/* GOAL style  */
+
+/* mission-vission style  */
+ #planning{
+  background: #EEF4FA;
+  padding: 70px 0px;
+ }
+/* mission-vission style  */
+
+
 /* Features style  */
 #Features{
-    background: var(--bg-secondary);
     padding: 50px 0px;
   }
   .featuresTop{
@@ -173,7 +174,7 @@ a,span,h1,h2,h3,h4,h5,h6,li,img,div,section {
     cursor: pointer;
     transition: all linear .5s;
     border: none;
-   
+    background-color:#F4F6FC;
   }
   .customCard:hover{
     background-color: #2505f212;
@@ -183,6 +184,53 @@ a,span,h1,h2,h3,h4,h5,h6,li,img,div,section {
     color: #f20505f9;
   }
 /* Features style  */
+
+/* eam style  */
+
+  #team{
+    background: #F4F6FC;
+    padding: 70px 0px;
+  }
+  .cardImage{
+    position: relative;
+  }
+  .customCard{
+   transition: all linear .4s;
+  }
+  .customCard:hover{
+    box-shadow: rgba(77, 75, 75, 0.426) 0px 2px 5px 2px;
+  }
+ 
+  .customCard:hover .gradiant{
+   width: 100%;
+   opacity: 1;
+   transition: all linear .3s;
+  }
+.gradiant{
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  border-radius: 50%;
+  height: 100%;
+  width: 0%;
+  background-image: linear-gradient(to bottom,#ffffff00, #5239f3c1);
+}
+.gradiantIcon{
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  text-align: center;
+}
+.icon{
+
+  transition: all linear .6s;
+}
+.icon:hover{
+  transform: scale(1.5);
+  color: #f205af !important;
+}
+/* Team style  */
 
 
 
