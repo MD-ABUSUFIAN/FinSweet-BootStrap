@@ -193,42 +193,71 @@ a,span,h1,h2,h3,h4,h5,h6,li,img,div,section {
     position: relative;
     transition:all linear .9s;
     cursor: pointer;
-    overflow-y: hidden;
-    display: block;
-   
+    overflow: hidden;
   }
 
-   .projectCard:hover .shadow{
-   opacity: 1;
-   width:100%;
- } 
-  
- .projectCard:hover .shadow__content{
-  width:100%;
-  opacity: 1;
- }
-   
   .shadow{
     position: absolute;
-    left:0px;
+    left:-50%;
     bottom: 0px;
-    width:0%;
     height: 100%;
-    opacity: 0;
+    width:50%;
     background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
     transition:all linear .9s;
   }
-   .shadow__content{
+  .topShadow{
     position: absolute;
-    width:0%;
+    left:0;
+    top:-100%;
+    height: 100%;
+    width:100%;
+    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    transition:all linear .9s;
+  }
+  .bottomShadow{
+    position: absolute;
+    left:0;
+    bottom:-100%;
+    height: 100%;
+    width:100%;
+    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    transition:all linear .9s;
+  }
+    .shadow__content{
+    position: absolute;
     left:0px;
     bottom: 48px;
-    opacity: 0;
     transition:all ease-out .8s; 
     background: transparent;
-  } 
+  }  
+    .topShadow__content{
+    position: absolute;
+    left:0px;
+    bottom: 48px;
+    transition:all ease-out .8s; 
+    background: transparent;
+  }  
+    .bottomShadow__content{
+    position: absolute;
+    left:0px;
+    bottom: 48px;
+    transition:all ease-out .8s; 
+    background: transparent;
+  }  
+  
+  .projectCard:hover .shadow{
+    left: 0%;
+    bottom: 0;
+   } 
+   .projectCard:hover .topShadow{
+    top: 0;
+   }
+   .projectCard:hover .bottomShadow{
+    bottom: 0;
+   }
 
 /* Project style  */
+
 /* Features style  */
     #Features{
       background: var(--bg-secondary);
